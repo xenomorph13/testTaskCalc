@@ -56,7 +56,7 @@ class CalcucatorTest(unittest.TestCase):
         except Exception:
             print('Тест: test_00 не пройден')
             
-    #проверка операции сложение 1+2
+    #проверка операции сложения 1+2
     def test_01(self):
         do_buttons = [self.calculator.numb1, self.calculator.sign_plus, self.calculator.numb2, self.calculator.sign_rav]
         right_res = '3'
@@ -69,7 +69,7 @@ class CalcucatorTest(unittest.TestCase):
         except Exception:
             print('Тест: test_01 не пройден')
 
-      #проверка операции вычетание 9-5
+      #проверка операции вычетания 9-5
     def test_02(self):
         do_buttons = [self.calculator.numb9, self.calculator.sign_minus, self.calculator.numb5, self.calculator.sign_rav]
         right_res = '4'
@@ -95,7 +95,7 @@ class CalcucatorTest(unittest.TestCase):
         except Exception:
             print('Тест: test_03 не пройден')
             
-    #проверка операции очищение поля 2+4= С
+    #проверка операции очищения поля 2+4= С
     def test_04(self):
         do_buttons = [self.calculator.numb2, self.calculator.sign_plus, self.calculator.numb4, self.calculator.sign_rav, self.calculator.sign_reset]
         right_res = '0'
@@ -108,7 +108,7 @@ class CalcucatorTest(unittest.TestCase):
         except Exception:
             print('Тест: test_04 не пройден')
 
-    #проверка операции деление 37/8
+    #проверка операции деления 37/8
     def test_05(self):
         do_buttons = [self.calculator.numb3, self.calculator.numb7, self.calculator.sign_division, self.calculator.numb8, self.calculator.sign_rav]
         right_res = '4.625'
@@ -121,7 +121,7 @@ class CalcucatorTest(unittest.TestCase):
         except Exception:
             print('Тест: test_05 не пройден')
             
-    #проверка операции умножение 9*2
+    #проверка операции умножения 9*2
     def test_06(self):
         do_buttons = [self.calculator.numb9, self.calculator.sign_multiply, self.calculator.numb2, self.calculator.sign_rav]
         right_res = '18'
@@ -173,7 +173,7 @@ class CalcucatorTest(unittest.TestCase):
         except Exception:
             print('Тест: test_09 не пройден')         
 
-     #проверка операции 10% от 20. 20*10%
+     #проверка операции вычисления 10% от 20. 20*10%
     def test_10(self):
         do_buttons = [self.calculator.numb2, self.calculator.numb0, self.calculator.sign_multiply, self.calculator.numb1, self.calculator.numb0, self.calculator.sign_percent]
         right_res = '2'
